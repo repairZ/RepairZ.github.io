@@ -1,0 +1,23 @@
+<ifModule mod_headers.c>
+    
+    <FilesMatch "\.(html|htm)$">
+        Header set Cache-Control "max-age=86400"
+    </FilesMatch>
+
+    <FilesMatch "\.(js|css|txt)$">
+        Header set Cache-Control "max-age=86400"
+    </FilesMatch>
+
+    <FilesMatch "\.(flv|swf|ico|gif|jpg|jpeg|png)$">
+        Header set Cache-Control "max-age=86400"
+    </FilesMatch>
+
+    <FilesMatch "\.(pl|php|cgi|spl|scgi|fcgi)$">
+        Header unset Cache-Control
+    </FilesMatch>
+</IfModule>
+ 
+<IfModule mod_setenvif.c>
+  BrowserMatch "MSIE" force-no-vary
+  BrowserMatch "Mozilla/4.[0-9]{2}" force-no-vary
+</IfModule>
