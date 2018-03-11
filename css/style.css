@@ -1085,10 +1085,10 @@ fieldset[disabled] .s-btn {
         width: auto;
         height: auto;
         float: left;
-        
+
     }
 }
-    
+
 .s-header__trigger,
 .s-header__trigger-icon {
     transition-duration: 500ms;
@@ -2141,34 +2141,60 @@ fieldset[disabled] .s-btn {
 .contact-header {
     text-align: right;
     list-style-type: none;
-margin-top:5px
+    margin-top: 5px;
+
 }
 
-.phone1 a, .phone2 a{
+.phone1 a,
+.phone2 a ,.facebook a {
     color: #0076a3;
-    font-weight: 600;
-    
+    font-weight: 900;
+
+}
+
+@media (min-width: 1024px) {
+    .contact-header li {
+        display: inline;
+        margin-left: 30px;
+    }
+    .contact-header {
+        margin-top: 15px
+    }
+    .phone1 a,
+    .phone2 a ,.facebook a{
+        font-size: 20px
+    }
 }
 
 @media (max-width: 414px) {
-    .phone1 a, .phone2 a{
-        font-size:15px;
-        margin-right: -25px} .s-header__logo {
-            margin-left: -25px
+    .phone1 a,
+    .phone2 a , .facebook a{
+        font-size: 15px;
+        margin-right: -25px
+    }
+    .s-header__logo {
+        margin-left: -25px
     }
 }
 
 @media (max-width: 360px) {
-    .phone1 a, .phone2 a{
-        font-size:15px;
-        margin-right: -25px} .s-header__logo {
-            margin-left: -25px
+    .phone1 a,
+    .phone2 a, .facebook a{
+        font-size: 15px;
+        margin-right: -25px
+    }
+    .s-header__logo {
+        margin-left: -25px
     }
 }
+
 @media (max-width: 320px) {
-    .phone1 a, .phone2 a{
-        font-size:15px;
-        margin-right: -25px} .s-header__logo {
-            margin-left: -25px
+    .phone1 a,
+    .phone2 a , .facebook a {
+        font-size: 15px;
+        margin-right: -25px
+    }
+    .s-header__logo {
+        margin-left: -25px
     }
 }
